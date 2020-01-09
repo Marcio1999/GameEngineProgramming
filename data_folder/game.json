@@ -1,0 +1,148 @@
+{
+  "Level l": [
+    {
+      "w": 50,
+      "x": 2180,
+      "h": 20,
+      "name": "My Sprite",
+      "y": -139,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2280,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2330,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2380,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2380,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2430,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2480,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2530,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2580,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 2630,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 140,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 175,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 225,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 275,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 325,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 375,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 425,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    },
+    {
+      "w": 50,
+      "x": 125,
+      "h": 20,
+      "name": "My Sprite",
+      "y": 250,
+      "type": "Platform"
+    }
+  ],
+  "player": [{
+    "w": 20,
+    "x": 300,
+    "h": 20,
+    "name": "My Sprite",
+    "y": 100,
+    "type": "Player"
+  }]
+}
