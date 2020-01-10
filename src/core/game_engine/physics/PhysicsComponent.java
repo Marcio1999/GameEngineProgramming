@@ -11,7 +11,7 @@ public class PhysicsComponent extends Component {
     public float maxSpeed = 5f;
     private float friction = 0.9f;
     private float spacer = 0.3f;
-    private float gravity = 1.1f;
+    private float gravity = 0;//1.1f;
     // box collider
     private BoxCollider2D boxCollider2D;
     private boolean isGrounded = false;

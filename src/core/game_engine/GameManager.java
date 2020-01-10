@@ -33,6 +33,7 @@ public class GameManager {
         return Instance.screenCentre;
     }
     public static void CAMERA_FOLLOW(PVector target){
+
         if(PVector.dist(target, GameManager.SCREEN_CENTRE()) > GameManager.CAMERA_DISTANCE){
             PVector cameraLerp = GameManager.SCREEN_CENTRE().copy();
             cameraLerp.sub(target).sub(Instance.cameraTranspose).add(GameManager.CAMERA_OFFSET);
@@ -77,8 +78,7 @@ public class GameManager {
             for (int j = i + 1; j < this.game_objects.size(); j++) {
                 Sprite gB = this.game_objects.get(j);
                 if (!gB.isActive) continue;
-                //if gA static, it doesnt check collisions
-                //checks that moving objects are added to game_objects before other types
+
                 if (gA.getLayerType() == LayerTypes.MOVING
                         && gB.getLayerType() != LayerTypes.BACKGROUND
                         && gB.getLayerType() != LayerTypes.MOVING) {

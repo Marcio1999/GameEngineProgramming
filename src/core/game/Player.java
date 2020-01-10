@@ -36,6 +36,7 @@ public class Player extends Sprite implements MoveAble {
         parent.fill(255);
         this.parent.rect(0, 0, this.size.x, this.size.y);
         parent.popMatrix();
+        System.out.println("Player pos " + this.position.toString());
         }
 
     @Override
@@ -74,4 +75,6 @@ public class Player extends Sprite implements MoveAble {
         bullet.Shoot(physicsComponent.getDir());
 
     }
+
+
 }

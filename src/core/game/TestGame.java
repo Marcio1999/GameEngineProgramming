@@ -40,7 +40,7 @@ public class TestGame {
         // add player
         player = (Player) levelManager.load_players().get(0);
         playerInput = new InputController(player);
-        levelManager.load_level("Level 1");
+        levelManager.load_level("LevelOne");
     }
 
     public void update() {
@@ -73,7 +73,7 @@ public class TestGame {
                         System.out.println("open edit mode");
                         gameMode = GameMode.EDIT;
                         game_manager.startup();
-                        levelManager.load_level("Level l");
+                        levelManager.load_level("LevelOne");
                         break;
                     default:
                         gameMode = GameMode.RELOAD;

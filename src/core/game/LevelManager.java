@@ -13,7 +13,7 @@ public class LevelManager {
     private PApplet parent;
     private GameManager gameManager;
     char currentKey = 'p';
-    private String level_name = "Level 1";
+    private String level_name = "LevelOne";
     private int platformWidth = 50;
     private int platformHeight = 20;
     String itemType = "Platform";
@@ -60,6 +60,8 @@ public class LevelManager {
                         , itemData.getInt("w")
                         , itemData.getInt("h"));
             }
+        }else{
+            System.out.println("Level name was not found!!!!!!!!!!!!!!!!!");
         }
     }
 
@@ -108,6 +110,7 @@ public class LevelManager {
         y -= GameManager.CAMERA_POSITION().y;
 
         Sprite sprite = null;
+        System.out.println("xy = " + x + "," + y);
         switch (itemType){
             case "Platform":
                 Platform gamePlatform = new Platform(this.parent, x, y,w,h);

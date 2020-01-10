@@ -16,7 +16,7 @@ public class Rectangle {
     public Point getTopRight() {
         return topRight;
     }
-    
+
     public Point getBottomLeft() {
         return bottomLeft;
     }
@@ -45,12 +45,11 @@ public class Rectangle {
         return true;
     }
     public boolean isOverLapping(Rectangle other){
-        //if its not overlapping return to false
-        //is it above
+
         if(topRight.getY() > other.bottomLeft.getY() || bottomLeft.getY() < other.topRight.getY()){
             return false;
         }
-        //left
+
         if(topRight.getX() < other.bottomLeft.getX() || bottomLeft.getX() > other.topRight.getX()){
             return false;
         }
@@ -67,7 +66,7 @@ public class Rectangle {
         return other.topRight.getX() >= this.bottomLeft.getX() && other.topRight.getX() < this.topRight.getX();
     }
     public boolean getIsTouchingLeft(Rectangle other){
-        return  other.bottomLeft.getX() >= this.topRight.getX() && other.bottomLeft.getX() < this.bottomLeft.getX();
+        return  other.bottomLeft.getX() <= this.topRight.getX() && other.bottomLeft.getX() > this.bottomLeft.getX();
     }
 
 }

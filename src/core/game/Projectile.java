@@ -33,8 +33,8 @@ public class Projectile extends Sprite {
         this.render();
     }
     private void checkCollision(){
-        if(this.boxCollider2D.otherBoxColliders.size() > 0){
-            for(BoxCollider2D b : this.boxCollider2D.otherBoxColliders){
+        if(this.boxCollider2D.otherColliders.size() > 0){
+            for(BoxCollider2D b : this.boxCollider2D.otherColliders){
 
                 if(b.gameObject.getLayerType() == LayerTypes.STATIC){
                     b.gameObject.setActive(false);
@@ -42,7 +42,7 @@ public class Projectile extends Sprite {
                     GameManager.Destroy(this);
                 }
             }
-            this.boxCollider2D.otherBoxColliders.clear();
+            this.boxCollider2D.otherColliders.clear();
         }
     }
     private void render(){
